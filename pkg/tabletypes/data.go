@@ -1,0 +1,25 @@
+package tabletypes
+
+var AllTableTypes = []TableType{
+	{Name: "csv", FileExt: ".csv", MimeType: "text/csv", MagicNumber: "na", ListTables: "na", ListColumns: "yes", ListColumnTypes: "no"},
+	{Name: "xlsx", FileExt: ".xlsx", MimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", MagicNumber: "50 4B 03 04", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "sqlite", FileExt: ".sqlite", MimeType: "application/vnd.sqlite3", MagicNumber: "53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "html", FileExt: ".html", MimeType: "text/html", MagicNumber: "3C 21 44 4F 43 54 59 50 45", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "no"},
+	{Name: "json", FileExt: ".json", MimeType: "application/json", MagicNumber: "na", ListTables: "na", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "postgres", FileExt: "na", MimeType: "na", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "mongodb", FileExt: "na", MimeType: "na", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "tsv", FileExt: ".tsv", MimeType: "text/tab-separated-values", MagicNumber: "na", ListTables: "na", ListColumns: "yes", ListColumnTypes: "no"},
+	{Name: "xml", FileExt: ".xml", MimeType: "application/xml", MagicNumber: "3C 3F 78 6D 6C", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "no"},
+	{Name: "parquet", FileExt: ".parquet", MimeType: "application/vnd.apache.parquet", MagicNumber: "50 41 52 31", ListTables: "na", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "avro", FileExt: ".avro", MimeType: "avro/binary", MagicNumber: "4F 62 6A 01", ListTables: "na", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "orc", FileExt: ".orc", MimeType: "application/orc", MagicNumber: "4F 52 43", ListTables: "na", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "ods", FileExt: ".ods", MimeType: "application/vnd.oasis.opendocument.spreadsheet", MagicNumber: "50 4B 03 04", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "yaml", FileExt: ".yaml", MimeType: "application/yaml", MagicNumber: "na", ListTables: "na", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "toml", FileExt: ".toml", MimeType: "application/toml", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "mysql", FileExt: "na", MimeType: "na", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "mariadb", FileExt: "na", MimeType: "na", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "sqlserver", FileExt: "na", MimeType: "na", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "access", FileExt: ".accdb", MimeType: "application/x-msaccess", MagicNumber: "00 01 00 00", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "hdf5", FileExt: ".h5", MimeType: "application/x-hdf", MagicNumber: "89 48 44 46 0D 0A 1A 0A", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+	{Name: "bigquery", FileExt: "na", MimeType: "na", MagicNumber: "na", ListTables: "yes", ListColumns: "yes", ListColumnTypes: "yes"},
+}
