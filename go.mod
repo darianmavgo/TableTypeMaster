@@ -1,4 +1,4 @@
-module tabletypes
+module github.com/darianmavgo/TableTypeMaster
 
 go 1.23.0
 

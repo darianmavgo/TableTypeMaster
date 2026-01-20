@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Types</title>
+	<style>
+		table { border-collapse: collapse; width: 100%; }
+		th, td { border: 1px solid black; padding: 8px; text-align: left; }
+		th { background-color: #f2f2f2; }
+	</style>
+</head>
+<body>
+	<h1>Table Types</h1>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>File Ext</th>
+			<th>Mime Type</th>
+			<th>Magic Number</th>
+			<th>List Tables</th>
+			<th>List Columns</th>
+			<th>List Column Types</th>
+		</tr>
+		
+		<tr>
+			<td>csv</td>
+			<td>.csv</td>
+			<td>text/csv</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>no</td>
+		</tr>
+		
+		<tr>
+			<td>xlsx</td>
+			<td>.xlsx</td>
+			<td>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</td>
+			<td>50 4B 03 04</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>sqlite</td>
+			<td>.sqlite</td>
+			<td>application/vnd.sqlite3</td>
+			<td>53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>html</td>
+			<td>.html</td>
+			<td>text/html</td>
+			<td>3C 21 44 4F 43 54 59 50 45</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>no</td>
+		</tr>
+		
+		<tr>
+			<td>json</td>
+			<td>.json</td>
+			<td>application/json</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>postgres</td>
+			<td>na</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>mongodb</td>
+			<td>na</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>tsv</td>
+			<td>.tsv</td>
+			<td>text/tab-separated-values</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>no</td>
+		</tr>
+		
+		<tr>
+			<td>xml</td>
+			<td>.xml</td>
+			<td>application/xml</td>
+			<td>3C 3F 78 6D 6C</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>no</td>
+		</tr>
+		
+		<tr>
+			<td>parquet</td>
+			<td>.parquet</td>
+			<td>application/vnd.apache.parquet</td>
+			<td>50 41 52 31</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>avro</td>
+			<td>.avro</td>
+			<td>avro/binary</td>
+			<td>4F 62 6A 01</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>orc</td>
+			<td>.orc</td>
+			<td>application/orc</td>
+			<td>4F 52 43</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>ods</td>
+			<td>.ods</td>
+			<td>application/vnd.oasis.opendocument.spreadsheet</td>
+			<td>50 4B 03 04</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>yaml</td>
+			<td>.yaml</td>
+			<td>application/yaml</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>toml</td>
+			<td>.toml</td>
+			<td>application/toml</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>mysql</td>
+			<td>na</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>mariadb</td>
+			<td>na</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>sqlserver</td>
+			<td>na</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>access</td>
+			<td>.accdb</td>
+			<td>application/x-msaccess</td>
+			<td>00 01 00 00</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>hdf5</td>
+			<td>.h5</td>
+			<td>application/x-hdf</td>
+			<td>89 48 44 46 0D 0A 1A 0A</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+		<tr>
+			<td>bigquery</td>
+			<td>na</td>
+			<td>na</td>
+			<td>na</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

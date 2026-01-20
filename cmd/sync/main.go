@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"tabletypes/pkg/tabletypes"
+
+	"github.com/darianmavgo/TableTypeMaster/pkg/tabletypes"
 )
 
 func main() {
